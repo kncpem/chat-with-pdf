@@ -15,7 +15,7 @@ from langchain_community import vectorstores
 
 load_dotenv()
 
-genai.configure(api_key = os.getenv("GOOOGLE_API_KEY"))
+genai.configure(api_key = secrets.API_KEY)
 
 def get_pdf_text(pdf_docs):
     text = ""
